@@ -4,7 +4,7 @@ function renderArray() {
     resultsDiv.innerHTML = '';
     tpArray.forEach((entry) => {
         let result = document.createElement('p');
-        result.textContent = `${entry.isValid ? 'Valid US Number' : 'Invalid US Number'} : ${entry.phoneNumber} `;
+        result.textContent = `${entry.isValid ? 'Valid US number' : 'Invalid US number'}: ${entry.phoneNumber}`;
         resultsDiv.appendChild(result);
     });
 }
@@ -31,7 +31,7 @@ function tpValidation() {
 
     tpArray.forEach((entry) => {
         let result = document.createElement('p');
-        result.textContent = `${entry.isValid ? 'Valid US number' : 'Invalid US number'} : ${entry.phoneNumber} `;
+        result.textContent = `${entry.isValid ? 'Valid US number' : 'Invalid US number'}: ${entry.phoneNumber}`;
         resultsDiv.appendChild(result);
     });
 
